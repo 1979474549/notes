@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Exo", Arial, sans-serif;
+        background-color: #f7f7f7;
+        gap: 20px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0 3px 10px 0 rgba(0 0 0 / 0.1);
+        border-radius: 5px;
+        padding: 20px;
+        width: 640px;
+        height: 300px;
+        position: relative;
+        scroll-snap-type: y mandatory;
+        overflow: auto;
+      }
+
+      img {
+        border-radius: 4px;
+        max-height: 300px;
+        width: auto;
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://picsum.photos/500/300?random=1" alt="" />
+      <img src="https://picsum.photos/500/300?random=2" alt="" />
+      <img src="https://picsum.photos/500/300?random=3" alt="" />
+      <img src="https://picsum.photos/500/300?random=4" alt="" />
+      <img src="https://picsum.photos/500/300?random=5" alt="" />
+      <img src="https://picsum.photos/500/300?random=6" alt="" />
+      <img src="https://picsum.photos/500/300?random=7" alt="" />
+    </div>
+  </body>
+</html>
